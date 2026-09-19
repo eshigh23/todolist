@@ -1,0 +1,12 @@
+
+
+.coming-soon {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+.coming-soon--title {
+    margin-top: 10vh;
+}
