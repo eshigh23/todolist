@@ -16,7 +16,7 @@ export default function ComingSoon() {
         const fetchStatus = async () => {
             setIsLoading(true);
             try {
-                const response = await fetch('http://localhost:3000/api/status');
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_API_URL}api/status`);
                 const data = await response.json();
                 console.log('Backend status:', data);
                 setData(data);
